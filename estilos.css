@@ -1,0 +1,204 @@
+/* paleta de colores oscura, me gusta asi */
+:root {
+  --fondo: #0f172a;
+  --tarjeta: #1e293b;
+  --resaltado: #38bdf8;
+  --texto: #e2e8f0;
+  --suave: #94a3b8;
+}
+
+/* quitar margenes raros de todos lados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+/* la barra de arriba */
+.navbar {
+  background-color: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #334155;
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  color: var(--resaltado) !important;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  color: var(--suave) !important;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--resaltado) !important;
+}
+
+/* espaciado de todas las secciones */
+section {
+  padding: 5rem 0;
+}
+
+.titulo {
+  color: var(--resaltado);
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+/* presentacion principal */
+#inicio {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+}
+
+#inicio h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#inicio span {
+  color: var(--resaltado);
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  color: var(--resaltado);
+  margin-bottom: 1.5rem;
+}
+
+.descripcion {
+  color: var(--suave);
+  max-width: 600px;
+  font-size: 1.05rem;
+}
+
+.btn-personal {
+  background-color: var(--resaltado);
+  border: none;
+  padding: 0.7rem 1.8rem;
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.btn-personal:hover {
+  transform: translateY(-2px);
+  background-color: #0ea5e9;
+}
+
+/* sobre mi */
+.contenido {
+  background-color: var(--tarjeta);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #334155;
+}
+
+.contenido h3 {
+  color: var(--resaltado);
+  margin-bottom: 1rem;
+}
+
+.contenido p {
+  color: var(--suave);
+}
+
+.etiqueta {
+  display: inline-block;
+  background-color: #273549;
+  color: var(--resaltado);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  margin: 0.3rem;
+  font-size: 0.9rem;
+  border: 1px solid #334155;
+}
+
+/* tarjetas de proyectos */
+.proyecto {
+  background-color: var(--tarjeta);
+  border-radius: 12px;
+  padding: 1.5rem;
+  height: 100%;
+  border: 1px solid #334155;
+  transition: border-color 0.3s;
+}
+
+.proyecto:hover {
+  border-color: var(--resaltado);
+}
+
+.proyecto h4 {
+  color: var(--resaltado);
+  margin-bottom: 1rem;
+}
+
+.proyecto p {
+  color: var(--suave);
+  font-size: 0.95rem;
+}
+
+/* contacto */
+.tarjeta-contacto {
+  background-color: var(--tarjeta);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #334155;
+}
+
+.dato {
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.dato i {
+  color: var(--resaltado);
+  font-size: 1.3rem;
+  width: 25px;
+  text-align: center;
+}
+
+.dato a {
+  color: var(--texto);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.dato a:hover {
+  color: var(--resaltado);
+}
+
+/* pie de pagina */
+footer {
+  background-color: var(--tarjeta);
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid #334155;
+  color: var(--suave);
+}
+
+/* para celular se vea bien */
+@media (max-width: 768px) {
+  #inicio h1 {
+    font-size: 1.8rem;
+  }
+  section {
+    padding: 3rem 0;
+  }
+  .contenido, .tarjeta-contacto {
+    padding: 1.5rem;
+  }
+}

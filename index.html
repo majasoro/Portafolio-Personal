@@ -1,11 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mario Solano | Portafolio Personal</title>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- iconos chiquitos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- el css -->
+  <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
-    
+
+  <!-- barra de navegacion arriba -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">majasoro.dev</a>
+      
+      <!-- boton que aparece en celular -->
+      <button class="navbar-toggler bg-dark border-secondary" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon bg-light rounded"></span>
+      </button>
+
+      <!-- los enlaces de la pagina -->
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- donde me presento -->
+  <section id="inicio">
+    <div class="container">
+      <h1>Hola, soy <span>Mario Solano Rodríguez</span></h1>
+      <p class="subtitulo">Desarrollador Jr. Java Full Stack en formación</p>
+      <p class="descripcion mb-4">
+        me encanta crear cosas con codigo. estoy aprendiendo y mejorando cada dia. 
+        aqui muestro lo que voy construyendo 💻
+      </p>
+      <a href="#contacto" class="btn btn-personal text-white">
+        <i class="bi bi-send"></i> Contáctame
+      </a>
+    </div>
+  </section>
+
+  <!-- quien soy -->
+  <section id="sobre-mi">
+    <div class="container">
+      <h2 class="titulo">Sobre mí</h2>
+      <div class="contenido">
+        <h3>Mi historia</h3>
+        <p>
+          Soy una persona apasionada por la tecnologia y por resolver problemas. 
+          actualmente me estoy enfocando en el desarrollo con java y tecnologias web.
+        </p>
+        <p class="mb-4">
+          Me gusta investigar, probar y aprender algo nuevo todos los días. 
+          poco a poco voy construyendo bases solidas 🚀
+        </p>
+        <h5 class="text-info mb-3">lo que desarrollo:</h5>
+        <div class="etiquetas">
+          <span class="etiqueta">Java</span>
+          <span class="etiqueta">HTML5</span>
+          <span class="etiqueta">CSS3</span>
+          <span class="etiqueta">Bootstrap</span>
+          <span class="etiqueta">JavaScript</span>
+          <span class="etiqueta">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- lo que he hecho hasta ahora -->
+  <section id="proyectos">
+    <div class="container">
+      <h2 class="titulo">Mis Proyectos:</h2>
+      <div class="row g-4">
+        
+        <!-- primer proyecto -->
+        <div class="col-md-4 col-sm-6">
+          <div class="proyecto">
+            <h4>Calculadora en Java</h4>
+            <p>programa que hace operaciones por consola. practique condicionales y ciclos.</p>
+            <span class="badge bg-info text-dark">Java</span>
+          </div>
+        </div>
+
+        <!-- este portafolio mismo -->
+        <div class="col-md-4 col-sm-6">
+          <div class="proyecto">
+            <h4>Portafolio Web</h4>
+            <p>esta pagina. hecha con html + css + bootstrap. Sitio web responsivo.</p>
+            <span class="badge bg-danger">HTML</span>
+            <span class="badge bg-primary">Bootstrap</span>
+          </div>
+        </div>
+
+        <!-- cositas con js -->
+        <div class="col-md-4 col-sm-6">
+          <div class="proyecto">
+            <h4>Gestor de Tareas</h4>
+            <p>agregar y eliminar tareas. javascript puro para practicar.</p>
+            <span class="badge bg-warning text-dark">JS</span>
+            <span class="badge bg-info">CSS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- mis datos reales -->
+  <section id="contacto">
+    <div class="container">
+      <h2 class="titulo">Contacto</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 tarjeta-contacto">
+          
+          <p class="text-center mb-4">si quieres hablar conmigo, aqui estoy!</p>
+          
+          <div class="dato">
+            <i class="bi bi-linkedin"></i>
+            <a href="https://www.linkedin.com/in/mariosoro/" target="_blank">
+              linkedin.com/in/mariosoro/
+            </a>
+          </div>
+          
+          <div class="dato">
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/majasoro" target="_blank">
+              github.com/majasoro
+            </a>
+          </div>
+          
+          <div class="dato">
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:mariojsolanor@gmail.com">
+              mariojsolanor@gmail.com
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- pie de pagina sencillo -->
+  <footer>
+    <p>Mario Soro — Desarrollador en formación</p>
+    <p>© 2026 | hecho con sudor, lágrimas y mucho café</p>
+  </footer>
+
+  <!-- bootstrap js para que funcione el menu -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
