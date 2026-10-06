@@ -1,4 +1,4 @@
-/* paleta de colores oscura, me gusta asi */
+/* paleta de colores */
 :root {
   --fondo: #0f172a;
   --tarjeta: #1e293b;
@@ -7,7 +7,7 @@
   --suave: #94a3b8;
 }
 
-/* quitar margenes raros de todos lados */
+/* quitar margenes */
 * {
   margin: 0;
   padding: 0;
@@ -190,7 +190,7 @@ footer {
   color: var(--suave);
 }
 
-/* para celular se vea bien */
+/* para que en el celular se vea bien */
 @media (max-width: 768px) {
   #inicio h1 {
     font-size: 1.8rem;
